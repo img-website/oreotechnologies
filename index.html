@@ -8,116 +8,142 @@
     <link href="./assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="font-[Outfit]">
-    <header class="z-40 text-sm sticky top-0 transform duration-300 bg-white py-2 md:h-auto h-[80px]"> 
+    <header class="z-40 text-sm sticky top-0 transform duration-300 bg-white py-2 md:h-auto h-[80px]">
         <div class=" relative box-content flex h-full items-center justify-between lg:px-20 px-4 xl:mx-auto">
             <div class="group peer-has-[checked]:sidebar-open w-full">
 
-            
-            <div class="flex items-center justify-between w-full">
-                <a href="#" class="block ">
-                    <div class=" lg:w-[110px] w-[70px] overflow-hidden ">
-                        <img src="assets/img/oreotechnologies.png" class="w-full h-auto ">
-                    </div>
-                </a>
-                 <label for="sidebar-toggle" class="inline-block p-4 cursor-pointer text-gray-600 hover:text-black md:hidden ">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </label>
-            </div>
-            <input type="checkbox" id="sidebar-toggle" class="hidden peer" />
 
-             <aside
-                class="fixed top-0 left-0 h-full w-64 bg-white  text-black transform -translate-x-full group-has-[.peer:checked]:translate-x-0 transition-transform duration-300 z-50"
-            >
-                <div class="p-4 flex justify-between items-center border-b border-gray-700">
-                <div class=" lg:w-[110px] w-[70px] overflow-hidden ">
-                        <img src="assets/img/oreotechnologies.png" class="w-full h-auto ">
-                    </div>
-                <label for="sidebar-toggle" class="cursor-pointer text-gray-400 hover:text-white">&times;</label>
+                <div class="flex items-center justify-between w-full">
+                    <a href="#" class="block ">
+                        <div class=" lg:w-[110px] w-[70px] overflow-hidden ">
+                            <img src="assets/img/oreotechnologies.png" class="w-full h-auto ">
+                        </div>
+                    </a>
+                    <label for="sidebar-toggle"
+                        class="inline-block p-4 cursor-pointer text-gray-600 hover:text-black md:hidden ">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
                 </div>
-                <ul class="p-4 space-y-2">
-                    <li><a href="#" class="block hover:text-yellow-400">Home</a></li>
-                    <li><a href="#" class="block hover:text-yellow-400">About</a></li>
-                    <li><a href="#" class="block hover:text-yellow-400">Contact</a></li>
-                    <li>
-                       <div>
-                            <div class="relative group my-2">
-                                <input type="checkbox" id="service-toggle" class="hidden peer">
-                                <label for="service-toggle" class="cursor-pointer justify-between      flex items-center gap-2 ">
-                                    <h6 class=" text-black md:text-base text-sm">Service</h6>
-                                    <div class="">
-                                        <svg class=" transition-transform group-has-[#service-toggle:checked]:rotate-180" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path></svg>
-                                    </div>
-                                </label>
-                                <div class="mt-2 hidden group-has-[#service-toggle:checked]:block ">
-                                    <div class="flex items-start gap-4">
-                                       <div>
-                                            <ul class="space-y-2 ps-4">
-                                                <li><a href="#" class="block hover:text-yellow-400">Service 1</a></li>
-                                                <li><a href="#" class="block hover:text-yellow-400">Service 2</a></li>
-                                                <li><a href="#" class="block hover:text-yellow-400">Service 3</a></li>
-                                                <li><a href="#" class="block hover:text-yellow-400">Service 4</a></li>
-                                                <li><a href="#" class="block hover:text-yellow-400">Service 5</a></li>
-                                            </ul>
-                                       </div>
+                <input type="checkbox" id="sidebar-toggle" class="hidden peer" />
+
+                <aside
+                    class="fixed top-0 left-0 h-full w-64 bg-white  text-black transform -translate-x-full group-has-[.peer:checked]:translate-x-0 transition-transform duration-300 z-50">
+                    <div class="p-4 flex justify-between items-center border-b border-gray-700">
+                        <div class=" lg:w-[110px] w-[70px] overflow-hidden ">
+                            <img src="assets/img/oreotechnologies.png" class="w-full h-auto ">
+                        </div>
+                        <label for="sidebar-toggle"
+                            class="cursor-pointer text-gray-400 hover:text-white">&times;</label>
+                    </div>
+                    <ul class="p-4 space-y-2">
+                        <li><a href="#" class="block hover:text-yellow-400">Home</a></li>
+                        <li><a href="#" class="block hover:text-yellow-400">About</a></li>
+                        <li><a href="#" class="block hover:text-yellow-400">Contact</a></li>
+                        <li>
+                            <div>
+                                <div class="relative group my-2">
+                                    <input type="checkbox" id="service-toggle" class="hidden peer">
+                                    <label for="service-toggle"
+                                        class="cursor-pointer justify-between      flex items-center gap-2 ">
+                                        <h6 class=" text-black md:text-base text-sm">Service</h6>
+                                        <div class="">
+                                            <svg class=" transition-transform group-has-[#service-toggle:checked]:rotate-180"
+                                                stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="16px" width="16px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <div class="mt-2 hidden group-has-[#service-toggle:checked]:block ">
+                                        <div class="flex items-start gap-4">
+                                            <div>
+                                                <ul class="space-y-2 ps-4">
+                                                    <li><a href="#" class="block hover:text-yellow-400">Service 1</a>
+                                                    </li>
+                                                    <li><a href="#" class="block hover:text-yellow-400">Service 2</a>
+                                                    </li>
+                                                    <li><a href="#" class="block hover:text-yellow-400">Service 3</a>
+                                                    </li>
+                                                    <li><a href="#" class="block hover:text-yellow-400">Service 4</a>
+                                                    </li>
+                                                    <li><a href="#" class="block hover:text-yellow-400">Service 5</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                     <li>
-                       <div>
-                            <div class="relative group my-2">
-                                <input type="checkbox" id="solution-toggle" class="hidden peer">
-                                <label for="solution-toggle" class="cursor-pointer justify-between      flex items-center gap-2 ">
-                                    <h6 class=" text-black md:text-base text-sm">Solution</h6>
-                                    <div class="">
-                                        <svg class=" transition-transform group-has-[#solution-toggle:checked]:rotate-180" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path></svg>
-                                    </div>
-                                </label>
-                                <div class="mt-2 hidden group-has-[#solution-toggle:checked]:block ">
-                                    <div class="flex items-start gap-4">
-                                       <div>
-                                            <ul class="space-y-2 ps-4">
-                                                <li><a href="#" class="block hover:text-yellow-400">Solution 1</a></li>
-                                                <li><a href="#" class="block hover:text-yellow-400">Solution 2</a></li>
-                                                <li><a href="#" class="block hover:text-yellow-400">Solution 3</a></li>
-                                                <li><a href="#" class="block hover:text-yellow-400">Solution 4</a></li>
-                                                <li><a href="#" class="block hover:text-yellow-400">Solution 5</a></li>
-                                            </ul>
-                                       </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="relative group my-2">
+                                    <input type="checkbox" id="solution-toggle" class="hidden peer">
+                                    <label for="solution-toggle"
+                                        class="cursor-pointer justify-between      flex items-center gap-2 ">
+                                        <h6 class=" text-black md:text-base text-sm">Solution</h6>
+                                        <div class="">
+                                            <svg class=" transition-transform group-has-[#solution-toggle:checked]:rotate-180"
+                                                stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="16px" width="16px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <div class="mt-2 hidden group-has-[#solution-toggle:checked]:block ">
+                                        <div class="flex items-start gap-4">
+                                            <div>
+                                                <ul class="space-y-2 ps-4">
+                                                    <li><a href="#" class="block hover:text-yellow-400">Solution 1</a>
+                                                    </li>
+                                                    <li><a href="#" class="block hover:text-yellow-400">Solution 2</a>
+                                                    </li>
+                                                    <li><a href="#" class="block hover:text-yellow-400">Solution 3</a>
+                                                    </li>
+                                                    <li><a href="#" class="block hover:text-yellow-400">Solution 4</a>
+                                                    </li>
+                                                    <li><a href="#" class="block hover:text-yellow-400">Solution 5</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li><a href="#" class="block hover:text-yellow-400">Contact</a></li>
-                </ul>
-            </aside>
+                        </li>
+                        <li><a href="#" class="block hover:text-yellow-400">Contact</a></li>
+                    </ul>
+                </aside>
             </div>
             <div class="md:h-full md:flex hidden h-auto">
                 <nav aria-label=" main navigation" class="flex h-full items-center">
                     <ul class="z-40 flex h-full items-center lg:space-x-6 space-x-1 ">
-                        <li class="relative group text-black hover:text-[#137ec2] flex h-full text-base font-bold cursor-pointer">
-                            <a href="#"
-                                class="relative flex items-center justify-center px-2 lg:px-4
+                        <li
+                            class="relative group text-black hover:text-[#137ec2] flex h-full text-base font-bold cursor-pointer">
+                            <a href="#" class="relative flex items-center justify-center px-2 lg:px-4
                                         before:absolute before:-bottom-[28px] before:left-0 before:h-1 
                                         before:bg-[#137ec2] before:transition-all before:duration-300 
                                         group-hover:before:w-full">
                                 Home
                             </a>
                         </li>
-                        <li class="relative group text-black hover:text-[#137ec2] flex h-full text-base font-bold cursor-pointer">
-                            <a href="#"
-                                class="relative flex items-center justify-center px-2 lg:px-4
+                        <li
+                            class="relative group text-black hover:text-[#137ec2] flex h-full text-base font-bold cursor-pointer">
+                            <a href="#" class="relative flex items-center justify-center px-2 lg:px-4
                                         before:absolute before:-bottom-[28px] before:left-0 before:h-1 
                                         before:bg-[#137ec2] before:transition-all before:duration-300 
                                         group-hover:before:w-full">
@@ -141,7 +167,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class=" p-2 text-black group-hover:text-[#137ec2] transition duration-300 group-hover:rotate-180"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </span>
                             </a>
@@ -158,9 +184,10 @@
                                                 </div>
                                                 <div class="border-t border-[#e1e1e1] pt-4">
                                                     <div>
-                                                       <h6 class=" text-xl"> Rolls Royce</h6>
-                                                       <p class="text-black font-normal pt-4">
-                                                            We built an app for real-time nuclear plant monitoring. Read case study.
+                                                        <h6 class=" text-xl"> Rolls Royce</h6>
+                                                        <p class="text-black font-normal pt-4">
+                                                            We built an app for real-time nuclear plant monitoring. Read
+                                                            case study.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -175,15 +202,18 @@
                                                     <ul class="text-lg text-[#939393] pl-6 mt-4 space-y-4">
                                                         <li
                                                             class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-500 transition-all ">
-                                                            <a href="#" class="text-base font-medium">Android App Development</a>
+                                                            <a href="#" class="text-base font-medium">Android App
+                                                                Development</a>
                                                         </li>
                                                         <li
                                                             class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-500 transition-all">
-                                                            <a href="#" class="text-base font-medium">IOS App Development</a>
+                                                            <a href="#" class="text-base font-medium">IOS App
+                                                                Development</a>
                                                         </li>
                                                         <li
                                                             class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-500 transition-all">
-                                                            <a href="#" class="text-base font-medium">Hybrid App Development</a>
+                                                            <a href="#" class="text-base font-medium">Hybrid App
+                                                                Development</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -210,11 +240,13 @@
                                                 <ul class="text-lg text-[#939393] pl-6 mt-4 space-y-4">
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-300 transition-all">
-                                                        <a href="#" class="text-base font-medium">Shopify Development</a>
+                                                        <a href="#" class="text-base font-medium">Shopify
+                                                            Development</a>
                                                     </li>
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-300 transition-all">
-                                                        <a href="#" class="text-base font-medium">Wordpress Development</a>
+                                                        <a href="#" class="text-base font-medium">Wordpress
+                                                            Development</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -240,7 +272,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class=" p-2 text-black group-hover:text-[#137ec2] transition duration-300 group-hover:rotate-180"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </span>
                             </a>
@@ -257,15 +289,16 @@
                                                         development Solutions, built around your needs</p>
                                                 </div>
                                                 <div class="border-t border-[#e1e1e1] pt-4">
-                                                     <div class="">
+                                                    <div class="">
                                                         <div>
-                                                        <h6 class=" text-xl"> Rolls Royce</h6>
-                                                        <p class="text-black font-normal pt-4">
-                                                                We built an app for real-time nuclear plant monitoring. Read case study.
+                                                            <h6 class=" text-xl"> Rolls Royce</h6>
+                                                            <p class="text-black font-normal pt-4">
+                                                                We built an app for real-time nuclear plant monitoring.
+                                                                Read case study.
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -274,27 +307,28 @@
                                                 <ul class="text-lg text-[#939393] pl-6 mt-4 space-y-4">
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-500 transition-all">
-                                                        <a href="#"  class="text-base font-medium">Taxi Booking App</a>
+                                                        <a href="#" class="text-base font-medium">Taxi Booking App</a>
                                                     </li>
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-500 transition-all">
-                                                        <a href="#"  class="text-base font-medium">Grocery App</a>
+                                                        <a href="#" class="text-base font-medium">Grocery App</a>
                                                     </li>
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-500 transition-all">
-                                                        <a href="#"  class="text-base font-medium">Food Delivery App</a>
+                                                        <a href="#" class="text-base font-medium">Food Delivery App</a>
                                                     </li>
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-500 transition-all">
-                                                        <a href="#"  class="text-base font-medium">Medicine Delivery App</a>
+                                                        <a href="#" class="text-base font-medium">Medicine Delivery
+                                                            App</a>
                                                     </li>
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-500 transition-all">
-                                                        <a href="#"  class="text-base font-medium">Dating App</a>
+                                                        <a href="#" class="text-base font-medium">Dating App</a>
                                                     </li>
                                                 </ul>
                                                 <a href="#"
-                                                class="text-black relative text-2xl font-normal before:absolute before:h-px before:w-full before:bg-black before:-bottom-1 before:left-0 before:transition-all before:duration-500 hover:before:w-0 flex items-center gap-2 w-fit">
+                                                    class="text-black relative text-2xl font-normal before:absolute before:h-px before:w-full before:bg-black before:-bottom-1 before:left-0 before:transition-all before:duration-500 hover:before:w-0 flex items-center gap-2 w-fit">
                                                     <span>All Solutions</span>
                                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                         viewBox="0 0 512 512" height="20px" width="20px"
@@ -305,22 +339,24 @@
                                                     </svg>
                                                 </a>
                                             </div>
-                                            
+
                                         </div>
                                         <div>
                                             <div class="py-8">
                                                 <ul class="text-lg text-[#939393] pl-6 mt-4 space-y-4">
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-300 transition-all">
-                                                        <a href="#"  class="text-base font-medium">Online Doctor Appointment App</a>
+                                                        <a href="#" class="text-base font-medium">Online Doctor
+                                                            Appointment App</a>
                                                     </li>
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-300 transition-all">
-                                                        <a href="#"  class="text-base font-medium">Astrology App</a>
+                                                        <a href="#" class="text-base font-medium">Astrology App</a>
                                                     </li>
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-300 transition-all">
-                                                        <a href="#" class="text-base font-medium">Hospital Management</a>
+                                                        <a href="#" class="text-base font-medium">Hospital
+                                                            Management</a>
                                                     </li>
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-300 transition-all">
@@ -334,7 +370,8 @@
                                                 <ul class="text-lg text-[#939393] pl-6 mt-4 space-y-4">
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-300 transition-all">
-                                                        <a href="#"  class="text-base font-medium">Institute Management</a>
+                                                        <a href="#" class="text-base font-medium">Institute
+                                                            Management</a>
                                                     </li>
                                                     <li
                                                         class="relative before:absolute before:w-2 before:h-2 before:bg-[#137ec2] before:top-[12px] before:left-[-20px] before:rotate-45 hover:before:rotate-180 duration-300 transition-all">
@@ -364,17 +401,18 @@
                         </li>
                         <li>
                             <button class="cursor-pointer">
-                                <div class="bg-[#f6bf22] font-medium hover:bg-[#137ec2] hover:text-white transition-all duration-700 text-nowrap px-4 py-2 rounded-lg lg:text-lg text-base">
+                                <div
+                                    class="bg-[#f6bf22] font-medium hover:bg-[#137ec2] hover:text-white transition-all duration-700 text-nowrap px-4 py-2 rounded-lg lg:text-lg text-base">
                                     Schedule a call
                                 </div>
                             </button>
                         </li>
                     </ul>
-                    
+
 
                 </nav>
             </div>
-           
+
         </div>
     </header>
     <!-- hero section -->
@@ -382,40 +420,44 @@
         <div class="swiper mySwiper md:min-h-dvh max-md:!h-auto">
             <div class="swiper-wrapper">
                 <div class="swiper-slide ">
-                    <div class="relative h-full grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 bg-[url('../img/herobg.webp')] bg-cover bg-center bg-no-repeat">
+                    <div
+                        class="relative h-full grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 bg-[url('../img/herobg.webp')] bg-cover bg-center bg-no-repeat">
                         <div class="flex flex-col justify-center sm:px-18 px-4 lg:px-0">
-                            <h3 class="text-black md:text-4xl text-lg mb-8 font-bold"> We brought
-                                <span class="text-[linear-gradient(99deg,_#4ec6df,_#4aa5cf)]">75% reduction</span>
+                            <h3 class="text-black md:text-4xl text-[26px] tracking-[2px] mb-8 font-bold"> We brought
+                                <span
+                                    class="bg-[linear-gradient(99deg,#4ec6df,#4aa5cf)] bg-clip-text text-transparent">75%
+                                    reduction</span>
                                 in cost per hire using AI
                             </h3>
-                            <h4 class="font-normal mb-12 text-black text-base"> We are revolutionizing the landscape of
+                            <h4 class="font-normal mb-12 text-black md:text-base text-sm"> We are revolutionizing the
+                                landscape of
                                 wellness with our cutting-edge IoT App for a
                                 Startup backed by Shark Tank </h4>
 
                             <div class="flex  gap-4">
                                 <button
-                                    class="bg-black text-white py-2 px-[34px] rounded-lg hover:bg-white font-semibold text-base cursor-pointer transition-all duration-300 hover:text-black hover:border-dashed border border-black hover:border-black">Case
+                                    class="bg-black text-white py-2 px-6 rounded-lg hover:bg-white font-semibold md:text-base text-sm cursor-pointer transition-all duration-300 hover:text-black hover:border-dashed border border-black hover:border-black">Case
                                     Study</button>
                                 <button
                                     class="
                                             relative
                                             overflow-hidden
                                         text-white
-                                            py-2 px-[34px]
+                                            py-2 px-6
                                                 rounded-lg
-                                            font-semibold text-base cursor-pointer transition-all border border-transparent duration-300
+                                            font-semibold md:text-base text-sm cursor-pointer transition-all border border-transparent duration-300
                                                 before:absolute before:inset-0 before:bg-[linear-gradient(105deg,_#9063f4,_#517ded)] before:z-0
                                                     hover:before:opacity-0 hover:bg-white hover:text-black hover:border hover:border-black hover:border-dashed">
-                                    <span class="relative z-10">Case Study</span>
+                                    <span class="relative z-10">Get a Qoute</span>
                                 </button>
 
                             </div>
                         </div>
                         <!-- <div class=" relative  h-full"> -->
-                            <div class="flex justify-center items-center w-auto px-18 lg:px-0  h-auto p-10">
-                                <img src="assets/img/heroslide1.webp"  loading="lazy"
-                                    class="h-full w-full object-cover" alt="slideimg1">
-                            </div>
+                        <div class="flex justify-center items-center w-auto px-18 lg:px-0  h-auto p-10">
+                            <img src="assets/img/heroslide1.webp" loading="lazy" class="h-full w-full object-cover"
+                                alt="slideimg1">
+                        </div>
                         <!-- </div> -->
                     </div>
                 </div>
@@ -423,50 +465,53 @@
                     <div
                         class="relative grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 bg-[url('../img/herobg2.webp')] bg-cover bg-center bg-no-repeat">
                         <div class="flex flex-col justify-center sm:px-18 px-4 lg:px-0">
-                            <h3 class="text-black md:text-4xl text-lg mb-8 font-bold"> We brought
-                                <span class="text-[linear-gradient(99deg,_#4ec6df,_#4aa5cf)]">75% reduction</span>
+                            <h3 class="text-black md:text-4xl text-[26px] tracking-[2px] mb-8 font-bold"> We brought
+                                <span
+                                    class="bg-[linear-gradient(99deg,#4ec6df,#4aa5cf)] bg-clip-text text-transparent">75%
+                                    reduction</span>
                                 in cost per hire using AI
                             </h3>
-                            <h4 class="font-normal mb-12 text-black text-base"> We are revolutionizing the landscape of
+                            <h4 class="font-normal mb-12 text-black md:text-base text-sm"> We are revolutionizing the
+                                landscape of
                                 wellness with our cutting-edge IoT App for a
                                 Startup backed by Shark Tank </h4>
 
                             <div class="flex gap-4">
                                 <button
-                                    class="bg-black text-white py-2 px-[34px] rounded-lg hover:bg-white font-semibold text-base cursor-pointer transition-all duration-300 hover:text-black hover:border-dashed border border-black hover:border-black">Case
+                                    class="bg-black text-white py-2 px-6 rounded-lg hover:bg-white font-semibold text-base cursor-pointer transition-all duration-300 hover:text-black hover:border-dashed border border-black hover:border-black">Case
                                     Study</button>
                                 <button
                                     class="
                                             relative
                                             overflow-hidden
                                         text-white
-                                            py-2 px-[34px]
+                                            py-2 px-6
                                                 rounded-lg
                                             font-semibold text-base cursor-pointer transition-all border border-transparent duration-300
                                                 before:absolute before:inset-0 before:bg-[linear-gradient(105deg,_#9063f4,_#517ded)] before:z-0
                                                     hover:before:opacity-0 hover:bg-white hover:text-black hover:border hover:border-black hover:border-dashed">
-                                    <span class="relative z-10">Case Study</span>
+                                    <span class="relative z-10">Get a Qoute</span>
                                 </button>
 
                             </div>
                         </div>
-                       <div class="flex justify-center items-center w-auto  h-auto py-8">
-                            <img src="assets/img/heroslide2.webp"  loading="lazy"
-                                class="h-full w-full object-cover" alt="slideimg1">
+                        <div class="flex justify-center items-center w-auto  h-auto py-8">
+                            <img src="assets/img/heroslide2.webp" loading="lazy" class="h-full w-full object-cover"
+                                alt="slideimg1">
                         </div>
-                        
+
                     </div>
                 </div>
 
             </div>
-            
+
             <div
                 class="swiper-pagination-hero flex !justify-center !z-50 !absolute !items-center !bottom-11 [&_.swiper-pagination-bullet]:!bg-gray-400/60 [&_.swiper-pagination-bullet]:!w-3 [&_.swiper-pagination-bullet]:!h-3 [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet-active]:!bg-[#517ded]">
             </div>
         </div>
     </section>
-     <!-- services section -->
-     <section class=" FromConcept bg-white md:pt-10 pt-2 pb-10 lg:px-20 px-4">
+    <!-- services section -->
+    <section class=" FromConcept bg-white md:pt-10 pt-2 pb-10 lg:px-20 px-4">
         <div class="flex flex-col">
             <div class="flex md:justify-between justify-center md:items-center  md:flex-row flex-col">
                 <div class="md:max-w-lg lg:max-w-2xl w-full">
@@ -486,8 +531,8 @@
                         </svg>
                     </a>
                 </div>
- 
- 
+
+
             </div>
             <div class="grid md:grid-cols-3 grid-cols-1  gap-x-8 gap-y-8 mt-10">
                 <div class="flex flex-col items-start gap-2">
@@ -558,21 +603,24 @@
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
     <!-- features section -->
     <section class="lg:px-20 px-4 py-8">
         <div>
             <div class="text-center">
                 <h6 class="font-semibold md:text-lg text-sm mb-2">FEATURED WORK</h6>
-                <p class="md:text-2xl text-lg text-black font-light text-center mb-4">Discover how we <span class="text-[#137ec2] font-semibold">transform visions into digital realities ,</span> <br> creating success stories that redefine industry benchmarks</p>
+                <p class="md:text-2xl text-lg text-black font-light text-center mb-4">Discover how we <span
+                        class="text-[#137ec2] font-semibold">transform visions into digital realities ,</span> <br>
+                    creating success stories that redefine industry benchmarks</p>
             </div>
             <div class="swiper homeSwipper2 pb-20">
-                 <div class="swiper-wrapper">
+                <div class="swiper-wrapper">
                     <div class="swiper-slide ">
                         <div class="rounded-2xl overflow-hidden flex flex-wrap mt-14">
                             <div class="md:w-1/2 w-full">
                                 <div class="bg-[#e1e1e159] p-8 space-y-10 h-full">
-                                    <div class="flex items-center  md:gap-4 gap-2 text-[#9d9d9d] xl:text-base md:text-sm text-xs">
+                                    <div
+                                        class="flex items-center  md:gap-4 gap-2 text-[#9d9d9d] xl:text-base md:text-sm text-xs">
                                         <div>AI</div>
                                         <div class="w-[6px] h-[6px] bg-[#9d9d9d] rounded-full"></div>
                                         <div>ClimateTech</div>
@@ -583,7 +631,9 @@
 
                                     </div>
                                     <div>
-                                        <p class="xl:text-2xl leading-[34px] md:text-xl text-lg font-medium   ">We revitlatized UK's largest smart home heating control manufacturer by deploying smart IoT solutions , reducing energy bills by 50%</p>
+                                        <p class="xl:text-2xl leading-[34px] md:text-xl text-lg font-medium   ">We
+                                            revitlatized UK's largest smart home heating control manufacturer by
+                                            deploying smart IoT solutions , reducing energy bills by 50%</p>
                                     </div>
                                     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
                                         <div>
@@ -596,23 +646,26 @@
                                         </div>
                                         <div>
                                             <h6 class="font-bold xl:text-2xl md:text-lg">32 zones</h6>
-                                            <p class="xl:text-lg md:text-sm font-light">facilitated via mobile app, covering the entire home</p>
+                                            <p class="xl:text-lg md:text-sm font-light">facilitated via mobile app,
+                                                covering the entire home</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="md:w-1/2 w-full">
                                 <div class="h-full">
-                                    <img src="https://media.12newsnow.com/assets/CCT/images/c958c7b1-c3aa-4bc5-81a9-1f069f6e7d39/c958c7b1-c3aa-4bc5-81a9-1f069f6e7d39_1140x641.jpg" alt="" class="w-full h-full object-cover">
+                                    <img src="https://media.12newsnow.com/assets/CCT/images/c958c7b1-c3aa-4bc5-81a9-1f069f6e7d39/c958c7b1-c3aa-4bc5-81a9-1f069f6e7d39_1140x641.jpg"
+                                        alt="" class="w-full h-full object-cover">
                                 </div>
                             </div>
                         </div>
                     </div>
-                     <div class="swiper-slide ">
+                    <div class="swiper-slide ">
                         <div class="rounded-2xl overflow-hidden flex flex-wrap mt-14">
                             <div class="md:w-1/2 w-full">
                                 <div class="bg-[#e1e1e159] p-8 space-y-10 h-full">
-                                    <div class="flex items-center  md:gap-4 gap-2 text-[#9d9d9d] xl:text-base md:text-sm text-xs">
+                                    <div
+                                        class="flex items-center  md:gap-4 gap-2 text-[#9d9d9d] xl:text-base md:text-sm text-xs">
                                         <div>AI</div>
                                         <div class="w-[6px] h-[6px] bg-[#9d9d9d] rounded-full"></div>
                                         <div>ClimateTech</div>
@@ -623,7 +676,9 @@
 
                                     </div>
                                     <div>
-                                        <p class="xl:text-2xl leading-[34px] md:text-xl text-lg font-medium   ">We revitlatized UK's largest smart home heating control manufacturer by deploying smart IoT solutions , reducing energy bills by 50%</p>
+                                        <p class="xl:text-2xl leading-[34px] md:text-xl text-lg font-medium   ">We
+                                            revitlatized UK's largest smart home heating control manufacturer by
+                                            deploying smart IoT solutions , reducing energy bills by 50%</p>
                                     </div>
                                     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
                                         <div>
@@ -636,88 +691,97 @@
                                         </div>
                                         <div>
                                             <h6 class="font-bold xl:text-2xl md:text-lg">32 zones</h6>
-                                            <p class="xl:text-lg md:text-sm font-light">facilitated via mobile app, covering the entire home</p>
+                                            <p class="xl:text-lg md:text-sm font-light">facilitated via mobile app,
+                                                covering the entire home</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="md:w-1/2 w-full">
                                 <div class="h-full">
-                                    <img src="https://media.12newsnow.com/assets/CCT/images/c958c7b1-c3aa-4bc5-81a9-1f069f6e7d39/c958c7b1-c3aa-4bc5-81a9-1f069f6e7d39_1140x641.jpg" alt="" class="w-full h-full object-cover">
+                                    <img src="https://media.12newsnow.com/assets/CCT/images/c958c7b1-c3aa-4bc5-81a9-1f069f6e7d39/c958c7b1-c3aa-4bc5-81a9-1f069f6e7d39_1140x641.jpg"
+                                        alt="" class="w-full h-full object-cover">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="flex justify-end items-center gap-4 mt-20">
-                    <div class="swiper-button-prev !top-auto bottom-3 !right-22 !left-auto after:!text-lg border-2 border-[#137ec2] text-black !w-12 !h-12 rounded-full"></div>
-                    <div class="swiper-button-next !top-auto bottom-3 !right-6 !left-auto after:!text-lg border-2 border-[#137ec2] text-black !w-12 !h-12 rounded-full"></div>
+                    <div
+                        class="swiper-button-prev !top-auto bottom-3 !right-22 !left-auto after:!text-lg border-2 border-[#137ec2] text-black !w-12 !h-12 rounded-full">
+                    </div>
+                    <div
+                        class="swiper-button-next !top-auto bottom-3 !right-6 !left-auto after:!text-lg border-2 border-[#137ec2] text-black !w-12 !h-12 rounded-full">
+                    </div>
                 </div>
             </div>
-            
+
             <div class=" mt-10">
-                
+
                 <div class="mb-10 md:px-24 px-0 text-center">
                     <h6 class="lg:text-3xl text-2xl text-black font-semibold text-center mb-4">Trusted By</h6>
-                    <p class="text-[#525252] font-light md:text-[22px] text-sm text-center">Empowering Global Brands and Startups to Drive Innovation and Success with our unparalled expertise and commitment to excellence</p>
+                    <p class="text-[#525252] font-light md:text-[22px] text-sm text-center">Empowering Global Brands and
+                        Startups to Drive Innovation and Success with our unparalled expertise and commitment to
+                        excellence</p>
                 </div>
                 <div class="swiper mySwiperLogo my-20">
                     <div class="swiper-wrapper pb-10">
                         <div class="swiper-slide ">
-                        <div class="w-[100px]">
+                            <div class="w-[100px]">
                                 <img src="assets/img/feature-1.png" alt="features image" class="w-full h-auto">
-                        </div>
+                            </div>
                         </div>
                         <div class="swiper-slide ">
-                        <div class="w-[100px]">
+                            <div class="w-[100px]">
                                 <img src="assets/img/feature-2.png" alt="features image" class="w-full h-auto">
-                        </div>
+                            </div>
                         </div>
                         <div class="swiper-slide ">
-                        <div class="w-[100px]">
+                            <div class="w-[100px]">
                                 <img src="assets/img/feature-3.png" alt="features image" class="w-full h-auto">
-                        </div>
+                            </div>
                         </div>
                         <div class="swiper-slide ">
-                        <div class="w-[100px]">
+                            <div class="w-[100px]">
                                 <img src="assets/img/feature-4.png" alt="features image" class="w-full h-auto">
-                        </div>
+                            </div>
                         </div>
                         <div class="swiper-slide ">
-                        <div class="w-[100px]">
+                            <div class="w-[100px]">
                                 <img src="assets/img/feature-1.png" alt="features image" class="w-full h-auto">
-                        </div>
+                            </div>
                         </div>
                         <div class="swiper-slide ">
-                        <div class="w-[100px]">
+                            <div class="w-[100px]">
                                 <img src="assets/img/feature-2.png" alt="features image" class="w-full h-auto">
-                        </div>
+                            </div>
                         </div>
                         <div class="swiper-slide ">
-                        <div class="w-[100px]">
+                            <div class="w-[100px]">
                                 <img src="assets/img/feature-3.png" alt="features image" class="w-full h-auto">
-                        </div>
+                            </div>
                         </div>
                         <div class="swiper-slide ">
-                        <div class="w-[100px]">
+                            <div class="w-[100px]">
                                 <img src="assets/img/feature-4.png" alt="features image" class="w-full h-auto">
-                        </div>
+                            </div>
                         </div>
                         <div class="swiper-slide ">
-                        <div class="w-[100px]">
+                            <div class="w-[100px]">
                                 <img src="assets/img/feature-1.png" alt="features image" class="w-full h-auto">
-                        </div>
+                            </div>
                         </div>
                         <div class="swiper-slide ">
-                        <div class="w-[100px]">
+                            <div class="w-[100px]">
                                 <img src="assets/img/feature-2.png" alt="features image" class="w-full h-auto">
-                        </div>
+                            </div>
                         </div>
 
 
                     </div>
                 </div>
-                <div class="max-w-7xl mx-auto md:px-4 px-0 grid grid-cols-2 md:grid-cols-5 gap-y-8  space-x-6 md:mt-8 mt-4">
+                <div
+                    class="max-w-7xl mx-auto md:px-4 px-0 grid grid-cols-2 md:grid-cols-5 gap-y-8  space-x-6 md:mt-8 mt-4">
 
                     <div class="space-y-2 relative px-6">
                         <div class="hidden md:block absolute left-0 top-0 transform h-12 w-[2px] bg-[#137ec2] "></div>
@@ -761,7 +825,9 @@
                     <span class="text-[#137ec2]">See how we can help.</span>
                 </div>
                 <div>
-                    <button class="mt-4 bg-[#f6bf22] hover:bg-[#ab851b] border-[2px] border-[#f6bf22] hover:border-[#ab851b] px-4 py-2 rounded-lg font-medium text-lg text-black transition-all duration-300 flex items-center gap-2 text-nowrap">Schedule a call</button>
+                    <button
+                        class="mt-4 bg-[#f6bf22] hover:bg-[#ab851b] border-[2px] border-[#f6bf22] hover:border-[#ab851b] px-4 py-2 rounded-lg font-medium text-lg text-black transition-all duration-300 flex items-center gap-2 text-nowrap">Schedule
+                        a call</button>
                 </div>
             </div>
             <div class="md:w-1/2 w-full flex items-center justify-center md:order-2 order-1 md-mb-0 mb-4">
@@ -844,17 +910,17 @@
                         <a href="" class="uppercase text-black text-sm">110 Reviews</a>
                     </div>
                 </div>
- 
+
             </div>
-              <div class="pb-20">
+            <div class="pb-20">
                 <div class="swiper solutionSwiper2 flex md:pt-12! pt-5! w-full overflow-visible!">
                     <div class="w-full flex swiper-wrapper" style="transition-duration: 0ms; transition-delay: 0ms;"
                         id="swiper-wrapper-399857be044ca4da" aria-live="polite">
- 
+
                         <div class="swiper-slide">
                             <div
                                 class="w-full bg-white flex md:flex-row flex-col  shadow-[0px_4px_18.9px_0px_#0000001F] rounded-3xl overflow-hidden md:h-[250px] h-auto">
- 
+
                                 <div class=" md:w-1/2 p-6 flex flex-col justify-between">
                                     <div>
                                         <h2
@@ -863,7 +929,7 @@
                                         <h3 class="text-[#5D5D5D] mb-2.5 text-sm font-bold">
                                             Robert Freiberg, Founder of CDR
                                         </h3>
-    
+
                                         <p class=" text-[#5E5E5E] mb-2 text-sm font-normal ">
                                             "They have been extremely helpful in growing and improving CDR."
                                         </p>
@@ -886,13 +952,13 @@
                                         class="w-full h-full object-cover" alt="testimonialimg">
                                 </div>
                             </div>
- 
+
                         </div>
- 
+
                         <div class="swiper-slide">
                             <div
                                 class="w-full bg-white flex md:flex-row flex-col  shadow-[0px_4px_18.9px_0px_#0000001F] rounded-3xl overflow-hidden md:h-[250px] h-auto">
- 
+
                                 <div class=" md:w-1/2 p-6 flex flex-col justify-between">
                                     <div>
                                         <h2
@@ -901,7 +967,7 @@
                                         <h3 class="text-[#5D5D5D] mb-2.5 text-sm font-bold">
                                             Robert Freiberg, Founder of CDR
                                         </h3>
-    
+
                                         <p class=" text-[#5E5E5E] mb-2 text-sm font-normal ">
                                             "They have been extremely helpful in growing and improving CDR."
                                         </p>
@@ -924,12 +990,12 @@
                                         class="w-full h-full object-cover" alt="testimonialimg">
                                 </div>
                             </div>
- 
+
                         </div>
                         <div class="swiper-slide">
                             <div
                                 class="w-full bg-white flex md:flex-row flex-col  shadow-[0px_4px_18.9px_0px_#0000001F] rounded-3xl overflow-hidden md:h-[250px] h-auto">
- 
+
                                 <div class=" md:w-1/2 p-6 flex flex-col justify-between">
                                     <div>
                                         <h2
@@ -938,7 +1004,7 @@
                                         <h3 class="text-[#5D5D5D] mb-2.5 text-sm font-bold">
                                             Robert Freiberg, Founder of CDR
                                         </h3>
-    
+
                                         <p class=" text-[#5E5E5E] mb-2 text-sm font-normal ">
                                             "They have been extremely helpful in growing and improving CDR."
                                         </p>
@@ -961,13 +1027,17 @@
                                         class="w-full h-full object-cover" alt="testimonialimg">
                                 </div>
                             </div>
- 
+
                         </div>
- 
+
                     </div>
                     <div>
-                        <div class="swiper-button-prev !top-auto -bottom-20 !right-22 !left-auto after:!text-lg border-2 border-[#137ec2] !w-12 !h-12 rounded-full"></div>
-                        <div class="swiper-button-next !top-auto -bottom-20 !right-6 !left-auto after:!text-lg border-2 border-[#137ec2] !w-12 !h-12 rounded-full"></div>
+                        <div
+                            class="swiper-button-prev !top-auto -bottom-20 !right-22 !left-auto after:!text-lg border-2 border-[#137ec2] !w-12 !h-12 rounded-full">
+                        </div>
+                        <div
+                            class="swiper-button-next !top-auto -bottom-20 !right-6 !left-auto after:!text-lg border-2 border-[#137ec2] !w-12 !h-12 rounded-full">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -980,14 +1050,21 @@
                 <div class="flex flex-wrap md:border-r border-[#c7c7c747]">
                     <div class="md:w-1/2 w-full pr-4">
                         <div>
-                            <h6 class="text-[40px] leading-[48px] font-medium text-white"><span class="text-[#f6bf22] ">Excellence .</span> <br>Our minimum bar for client delivery.</h6>
-                            <p class="text-[#c2c7cc] text-lg mt-8 font-normal">Over 130 awards, accolades, and achievements showcase our quality and commitment to client success.</p>
+                            <h6 class="text-[40px] leading-[48px] font-medium text-white"><span
+                                    class="text-[#f6bf22] ">Excellence .</span> <br>Our minimum bar for client delivery.
+                            </h6>
+                            <p class="text-[#c2c7cc] text-lg mt-8 font-normal">Over 130 awards, accolades, and
+                                achievements showcase our quality and commitment to client success.</p>
                         </div>
-                        <div class="py-1 flex w-fit justify-start md:justify-center border-b-2 border-[#f6bf22] group mt-14">
-                            <a href="#" class="flex tems-center gap-2 text-sm md:text-base text-[#f6bf22] font-medium transition-all duration-300 group-hover:translate-x-3">
+                        <div
+                            class="py-1 flex w-fit justify-start md:justify-center border-b-2 border-[#f6bf22] group mt-14">
+                            <a href="#"
+                                class="flex tems-center gap-2 text-sm md:text-base text-[#f6bf22] font-medium transition-all duration-300 group-hover:translate-x-3">
                                 <span>Everything We Do</span>
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
                                     </path>
                                 </svg>
                             </a>
@@ -996,39 +1073,38 @@
                     <div class="md:w-1/2 w-full ">
                         <div class="flex flex-col space-y-6 items-center justify-center ">
                             <div class="relative w-[250px] h-[250px]">
-                                
-                                <div class="absolute inset-0 animate-spin-slow rounded-full flex items-center justify-center text-[#b5b5b5]">
+
+                                <div
+                                    class="absolute inset-0 animate-spin-slow rounded-full flex items-center justify-center text-[#b5b5b5]">
                                     <svg class="w-full h-full" viewBox="0 0 200 200">
                                         <defs>
-                                        <path
-                                            id="circlePath"
-                                            d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"
-                                        />
+                                            <path id="circlePath"
+                                                d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0" />
                                         </defs>
                                         <text fill="currentColor" font-size="12" letter-spacing="9">
                                             <textPath xlink:href="#circlePath" startOffset="50%" text-anchor="middle">
-                                                projects executed successfully 
+                                                projects executed successfully
                                             </textPath>
                                         </text>
                                     </svg>
                                 </div>
 
-                                <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+                                <div
+                                    class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
                                     <div class="text-[40px] font-bold">1,250+</div>
                                     <div class="text-lg font-semibold leading-tight">
                                         projects<br>delivered
                                     </div>
                                 </div>
                             </div>
-                             <div class="relative w-[250px] h-[250px]">
-                                
-                                <div class="absolute inset-0 animate-spin-slow rounded-full flex items-center justify-center text-[#b5b5b5]">
+                            <div class="relative w-[250px] h-[250px]">
+
+                                <div
+                                    class="absolute inset-0 animate-spin-slow rounded-full flex items-center justify-center text-[#b5b5b5]">
                                     <svg class="w-full h-full" viewBox="0 0 200 200">
                                         <defs>
-                                        <path
-                                            id="circlePath"
-                                            d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"
-                                        />
+                                            <path id="circlePath"
+                                                d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0" />
                                         </defs>
                                         <text fill="currentColor" font-size="12" letter-spacing="8">
                                             <textPath xlink:href="#circlePath" startOffset="50%" text-anchor="middle">
@@ -1038,22 +1114,22 @@
                                     </svg>
                                 </div>
 
-                                <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+                                <div
+                                    class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
                                     <div class="text-[40px] font-bold">130+</div>
                                     <div class="text-lg font-semibold leading-tight">
                                         Industry<br>sectors
                                     </div>
                                 </div>
                             </div>
-                             <div class="relative w-[250px] h-[250px]">
-                                
-                                <div class="absolute inset-0 animate-spin-slow rounded-full flex items-center justify-center text-[#b5b5b5]">
+                            <div class="relative w-[250px] h-[250px]">
+
+                                <div
+                                    class="absolute inset-0 animate-spin-slow rounded-full flex items-center justify-center text-[#b5b5b5]">
                                     <svg class="w-full h-full" viewBox="0 0 200 200">
                                         <defs>
-                                        <path
-                                            id="circlePath"
-                                            d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"
-                                        />
+                                            <path id="circlePath"
+                                                d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0" />
                                         </defs>
                                         <text fill="currentColor" font-size="12" letter-spacing="16">
                                             <textPath xlink:href="#circlePath" startOffset="50%" text-anchor="middle">
@@ -1063,7 +1139,8 @@
                                     </svg>
                                 </div>
 
-                                <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+                                <div
+                                    class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
                                     <div class="text-[40px] font-bold">4.9/5</div>
                                     <div class="text-lg font-semibold leading-tight">
                                         client rating
@@ -1081,7 +1158,8 @@
                             <img src="assets/img/exe-1.svg" alt="">
                         </div>
                         <div>
-                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing Companies 2025</h6>
+                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing
+                                Companies 2025</h6>
                         </div>
                     </div>
                     <div class="flex flex-col items-center justify-center">
@@ -1089,7 +1167,8 @@
                             <img src="assets/img/exe-2.svg" alt="">
                         </div>
                         <div>
-                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing Companies 2025</h6>
+                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing
+                                Companies 2025</h6>
                         </div>
                     </div>
                     <div class="flex flex-col items-center justify-center">
@@ -1097,7 +1176,8 @@
                             <img src="assets/img/exe-3.svg" alt="">
                         </div>
                         <div>
-                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing Companies 2025</h6>
+                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing
+                                Companies 2025</h6>
                         </div>
                     </div>
                     <div class="flex flex-col items-center justify-center">
@@ -1105,7 +1185,8 @@
                             <img src="assets/img/exe-4.svg" alt="">
                         </div>
                         <div>
-                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing Companies 2025</h6>
+                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing
+                                Companies 2025</h6>
                         </div>
                     </div>
                     <div class="flex flex-col items-center justify-center">
@@ -1113,7 +1194,8 @@
                             <img src="assets/img/exe-5.svg" alt="">
                         </div>
                         <div>
-                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing Companies 2025</h6>
+                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing
+                                Companies 2025</h6>
                         </div>
                     </div>
                     <div class="flex flex-col items-center justify-center">
@@ -1121,7 +1203,8 @@
                             <img src="assets/img/exe-6.svg" alt="">
                         </div>
                         <div>
-                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing Companies 2025</h6>
+                            <h6 class="text-lg font-normal text-white opacity-60 text-center">America's Fastest-Growing
+                                Companies 2025</h6>
                         </div>
                     </div>
                 </div>
@@ -1129,13 +1212,17 @@
         </div>
     </section>
     <!-- why choose us section -->
-     <section class=" bg-black ">
-        <div class="relative lg:px-20 px-4  bg-[url('../img/Ellipse.svg')] bg-no-repeat bg-[-60%_-40%] bg-[length:68%_auto]">
+    <section class=" bg-black ">
+        <div
+            class="relative lg:px-20 px-4  bg-[url('../img/Ellipse.svg')] bg-no-repeat bg-[-60%_-40%] bg-[length:68%_auto]">
             <div class="flex flex-wrap relative p-6 py-20">
                 <div class="md:w-1/2 w-full pr-20 mb-10">
                     <div class="md:sticky md:top-24 ">
-                        <h6 class="text-white text-3xl font-normal mb-4">Why visionary brands and <br> startups choose <span class="text-[#f6bf22] font-bold">TechAhead</span> </h6>
-                        <p class="text-white text-base font-normal">At TechAhead, we don’t just deliver projects: We engineer future-ready digital ecosystems that are secure, scalable, intelligent, and designed for impact. Here’s what sets us apart:</p>
+                        <h6 class="text-white text-3xl font-normal mb-4">Why visionary brands and <br> startups choose
+                            <span class="text-[#f6bf22] font-bold">TechAhead</span> </h6>
+                        <p class="text-white text-base font-normal">At TechAhead, we don’t just deliver projects: We
+                            engineer future-ready digital ecosystems that are secure, scalable, intelligent, and
+                            designed for impact. Here’s what sets us apart:</p>
                     </div>
                 </div>
                 <div class="md:w-1/2 w-full space-y-8">
@@ -1143,59 +1230,78 @@
                         <div class="text-[#ffffff8c] text-xl font-semibold">01</div>
                         <div>
                             <h6 class="text-white text-xl font-semibold mb-4">Accelerated Time to Market </h6>
-                            <p class="text-white text-base font-normal mb-4 tracking-wider">Leverage our proven playbooks, agile delivery, and cross-functional teams to launch MVPs and platforms 30–50% faster, without sacrificing quality or scalability.</p>
+                            <p class="text-white text-base font-normal mb-4 tracking-wider">Leverage our proven
+                                playbooks, agile delivery, and cross-functional teams to launch MVPs and platforms
+                                30–50% faster, without sacrificing quality or scalability.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
                         <div class="text-[#ffffff8c] text-xl font-semibold">02</div>
                         <div>
                             <h6 class="text-white text-xl font-semibold mb-4">Enterprise-Grade from Day One</h6>
-                            <p class="text-white text-base font-normal mb-4 tracking-wider">Our solutions are built to meet the demands of Fortune 500s - embedding compliance, observability, modularity, and performance from the first commit.</p>
+                            <p class="text-white text-base font-normal mb-4 tracking-wider">Our solutions are built to
+                                meet the demands of Fortune 500s - embedding compliance, observability, modularity, and
+                                performance from the first commit.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
                         <div class="text-[#ffffff8c] text-xl font-semibold">03</div>
                         <div>
-                            <h6 class="text-white text-xl font-semibold mb-4">Seamless Integrations & Cloud Readiness</h6>
-                            <p class="text-white text-base font-normal mb-4 tracking-wider">With deep experience in AWS, Azure, and hybrid environments, we architect APIs, microservices, and edge connections that integrate smoothly with legacy systems and modern stacks alike.</p>
+                            <h6 class="text-white text-xl font-semibold mb-4">Seamless Integrations & Cloud Readiness
+                            </h6>
+                            <p class="text-white text-base font-normal mb-4 tracking-wider">With deep experience in AWS,
+                                Azure, and hybrid environments, we architect APIs, microservices, and edge connections
+                                that integrate smoothly with legacy systems and modern stacks alike.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
                         <div class="text-[#ffffff8c] text-xl font-semibold">04</div>
                         <div>
-                            <h6 class="text-white text-xl font-semibold mb-4">Dedicated Team, Aligned with Your Vision</h6>
-                            <p class="text-white text-base font-normal mb-4 tracking-wider">Whether it’s through  team augmentation or end-to-end delivery, our delivery pods embed into your workflow like an in-house team, bringing product strategy, design, and engineering capabilities tailored to your roadmap.</p>
+                            <h6 class="text-white text-xl font-semibold mb-4">Dedicated Team, Aligned with Your Vision
+                            </h6>
+                            <p class="text-white text-base font-normal mb-4 tracking-wider">Whether it’s through team
+                                augmentation or end-to-end delivery, our delivery pods embed into your workflow like an
+                                in-house team, bringing product strategy, design, and engineering capabilities tailored
+                                to your roadmap.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
                         <div class="text-[#ffffff8c] text-xl font-semibold">05</div>
                         <div>
-                            <h6 class="text-white text-xl font-semibold mb-4">Proven Delivery. Predictable Velocity. </h6>
-                            <p class="text-white text-base font-normal mb-4 tracking-wider">With over 2,500 successful projects and a 95% milestone adherence rate, we’ve perfected the art of launching products on time—whether it's a startup MVP or an enterprise transformation. </p>
+                            <h6 class="text-white text-xl font-semibold mb-4">Proven Delivery. Predictable Velocity.
+                            </h6>
+                            <p class="text-white text-base font-normal mb-4 tracking-wider">With over 2,500 successful
+                                projects and a 95% milestone adherence rate, we’ve perfected the art of launching
+                                products on time—whether it's a startup MVP or an enterprise transformation. </p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
                         <div class="text-[#ffffff8c] text-xl font-semibold">06</div>
                         <div>
-                            <h6 class="text-white text-xl font-semibold mb-4">Secure by Design, Scalable by Default </h6>
-                            <p class="text-white text-base font-normal mb-4 tracking-wider">From DevSecOps pipelines to SOC2/HIPAA-compliant infrastructure, we bake in security and performance, ensuring your systems are audit-ready and built for global scale. </p>
+                            <h6 class="text-white text-xl font-semibold mb-4">Secure by Design, Scalable by Default
+                            </h6>
+                            <p class="text-white text-base font-normal mb-4 tracking-wider">From DevSecOps pipelines to
+                                SOC2/HIPAA-compliant infrastructure, we bake in security and performance, ensuring your
+                                systems are audit-ready and built for global scale. </p>
                         </div>
                     </div>
-                     <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4">
                         <div class="text-[#ffffff8c] text-xl font-semibold">07</div>
                         <div>
-                            <h6 class="text-white text-xl font-semibold mb-4">AI That Drives Actionable Outcomes  </h6>
-                            <p class="text-white text-base font-normal mb-4 tracking-wider">We specialize in building custom LLM applications , RAG pipelines, and AI agents that solve real problems—reducing operational load, accelerating insights, and enabling autonomous decision-making.  </p>
+                            <h6 class="text-white text-xl font-semibold mb-4">AI That Drives Actionable Outcomes </h6>
+                            <p class="text-white text-base font-normal mb-4 tracking-wider">We specialize in building
+                                custom LLM applications , RAG pipelines, and AI agents that solve real problems—reducing
+                                operational load, accelerating insights, and enabling autonomous decision-making. </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-     </section>
-     <!-- end of section -->
-       <section class=" blogsection relative lg:px-20 px-4 bg-white overflow-hidden py-14">
+    </section>
+    <!-- end of section -->
+    <section class=" blogsection relative lg:px-20 px-4 bg-white overflow-hidden py-14">
         <div class="w-full">
- 
+
             <div class=" text-start w-full flex flex-col items-start">
                 <h3 class="text-[15px] uppercase text-black font-bold md:mb-4 mb-2">BLOG & INSIGHTS</h3>
             </div>
@@ -1219,16 +1325,16 @@
                             </svg>
                         </span>
                     </button>
- 
+
                 </div>
- 
+
             </div>
- 
+
             <div class="group mb-7">
                 <div
                     class=" relative md:py-18 md:pr-[50px] md:pl-[70px] transition-all duration-300 group-hover:bg-[linear-gradient(293deg,_#6596FD_40%,_#CBA8FF_100%,_#A575EC_100%)]">
                     <div class="flex flex-col md:flex-row w-full gap-5 md:gap-[60px] ">
- 
+
                         <div class=" md:w-2/5">
                             <div
                                 class="md:absolute relative overflow-hidden  group-hover:bottom-32 md:h-[190px] transition-all duration-300 group-hover:scale-120 md:w-[320px] rounded-md">
@@ -1236,7 +1342,7 @@
                                     class="w-full h-full object-cover transition-transform duration-500 " alt="blogimg">
                             </div>
                         </div>
- 
+
                         <div class="flex flex-row gap-10 md:w-3/5 items-center md:justify-between">
                             <div class="flex flex-col">
                                 <h2 class="md:text-lg group-hover:text-white text-black font-medium">
@@ -1245,11 +1351,12 @@
                                         Services
                                     </a>
                                 </h2>
-                                <p class="text-[#6e6e6e] group-hover:text-white  text-xs font-normal mb-5">July 14, 2025 | 80 Views</p>
+                                <p class="text-[#6e6e6e] group-hover:text-white  text-xs font-normal mb-5">July 14, 2025
+                                    | 80 Views</p>
                                 <div class="flex flex-row gap-3 ">
                                     <div class="rounded-full w-[38px] h-[38px] overflow-hidden bg-[#F4F7F8]">
-                                        <img src="assets/img/testimonial.jpg" loading="lazy" class="w-full h-auto object-cover"
-                                            alt="blogmen">
+                                        <img src="assets/img/testimonial.jpg" loading="lazy"
+                                            class="w-full h-auto object-cover" alt="blogmen">
                                     </div>
                                     <div class="flex rounded-[40px] text-black bg-[#F4F7F8] px-3.5 py-1.5">
                                         Deepak Sinha
@@ -1270,7 +1377,7 @@
                                 </div>
                             </div>
                         </div>
- 
+
                     </div>
                 </div>
             </div>
@@ -1278,7 +1385,7 @@
                 <div
                     class=" relative md:py-18 md:pr-[50px] md:pl-[70px] transition-all duration-300 group-hover:bg-[linear-gradient(293deg,_#6596FD_40%,_#CBA8FF_100%,_#A575EC_100%)]">
                     <div class="flex flex-col md:flex-row w-full gap-5 md:gap-[60px] ">
- 
+
                         <div class=" md:w-2/5">
                             <div
                                 class="md:absolute relative overflow-hidden group-hover:bottom-32 md:h-[190px] transition-all duration-300 group-hover:scale-120 md:w-[320px] rounded-md">
@@ -1286,7 +1393,7 @@
                                     class="w-full h-full object-cover transition-transform duration-500 " alt="blogimg">
                             </div>
                         </div>
- 
+
                         <div class="flex flex-row gap-10 md:w-3/5 items-center md:justify-between">
                             <div class="flex flex-col">
                                 <h2 class="md:text-lg group-hover:text-white text-black font-medium">
@@ -1295,11 +1402,12 @@
                                         Services
                                     </a>
                                 </h2>
-                                <p class="text-[#6e6e6e] group-hover:text-white  text-xs font-normal mb-5">July 14, 2025 | 80 Views</p>
+                                <p class="text-[#6e6e6e] group-hover:text-white  text-xs font-normal mb-5">July 14, 2025
+                                    | 80 Views</p>
                                 <div class="flex flex-row gap-3 ">
                                     <div class="rounded-full w-[38px] h-[38px] overflow-hidden bg-[#F4F7F8]">
-                                        <img src="assets/img/testimonial.jpg" loading="lazy" class="w-full h-auto object-cover"
-                                            alt="blogmen">
+                                        <img src="assets/img/testimonial.jpg" loading="lazy"
+                                            class="w-full h-auto object-cover" alt="blogmen">
                                     </div>
                                     <div class="flex rounded-[40px] text-black bg-[#F4F7F8] px-3.5 py-1.5">
                                         Deepak Sinha
@@ -1320,7 +1428,7 @@
                                 </div>
                             </div>
                         </div>
- 
+
                     </div>
                 </div>
             </div>
@@ -1328,7 +1436,7 @@
                 <div
                     class=" relative md:py-18 md:pr-[50px] md:pl-[70px] transition-all duration-300 group-hover:bg-[linear-gradient(293deg,_#6596FD_40%,_#CBA8FF_100%,_#A575EC_100%)]">
                     <div class="flex flex-col md:flex-row w-full gap-5 md:gap-[60px] ">
- 
+
                         <div class=" md:w-2/5">
                             <div
                                 class="md:absolute relative overflow-hidden  group-hover:bottom-32 md:h-[190px] transition-all duration-300 group-hover:scale-120 md:w-[320px] rounded-md">
@@ -1336,7 +1444,7 @@
                                     class="w-full h-full object-cover transition-transform duration-500 " alt="blogimg">
                             </div>
                         </div>
- 
+
                         <div class="flex flex-row gap-10 md:w-3/5 items-center md:justify-between">
                             <div class="flex flex-col">
                                 <h2 class="md:text-lg group-hover:text-white text-black font-medium">
@@ -1345,11 +1453,12 @@
                                         Services
                                     </a>
                                 </h2>
-                                <p class="group-hover:text-white text-[#6e6e6e] text-xs font-normal mb-5">July 14, 2025 | 80 Views</p>
+                                <p class="group-hover:text-white text-[#6e6e6e] text-xs font-normal mb-5">July 14, 2025
+                                    | 80 Views</p>
                                 <div class="flex flex-row gap-3 ">
                                     <div class="rounded-full w-[38px] h-[38px] overflow-hidden bg-[#F4F7F8]">
-                                        <img src="assets/img/testimonial.jpg" loading="lazy" class="w-full h-auto object-cover"
-                                            alt="blogmen">
+                                        <img src="assets/img/testimonial.jpg" loading="lazy"
+                                            class="w-full h-auto object-cover" alt="blogmen">
                                     </div>
                                     <div class="flex rounded-[40px] text-black bg-[#F4F7F8] px-3.5 py-1.5">
                                         Deepak Sinha
@@ -1370,13 +1479,13 @@
                                 </div>
                             </div>
                         </div>
- 
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
- 
+
     <!-- footer section -->
     <footer class="">
         <div class="flex flex-wrap ">
@@ -1384,7 +1493,7 @@
                 <div class="flex">
                     <a href="#" class="block ">
                         <div class=" overflow-hidden ">
-                            <img src="assets/img/oreotechnologies.png"  class="w-full h-auto ">
+                            <img src="assets/img/oreotechnologies.png" class="w-full h-auto ">
                         </div>
                     </a>
                 </div>
@@ -1392,114 +1501,186 @@
             <div class="lg:w-3/7 md:w-3/4 w-full md:ps-0 ps-4 py-8">
                 <div class="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-2 space-y-4">
                     <div>
-                        <h6 class="text-base font-semibold mb-2 flex items-baseline gap-1">Discover oreotechnologies <div class="w-[6px] h-[6px] rounded-full bg-[#f6bf22]"></div> </h6>
+                        <h6 class="text-base font-semibold mb-2 flex items-baseline gap-1">Discover oreotechnologies
+                            <div class="w-[6px] h-[6px] rounded-full bg-[#f6bf22]"></div>
+                        </h6>
                         <ul class="space-y-3 text-sm">
-                        <li><a href="#" class="hover:underline text-sm">About Us</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Methodologies</a></li>
-                        <li><a href="#" class="hover:underline text-sm"> Technologies</a></li>
-                        <li><a href="#" class="hover:underline text-sm"> Certifications</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Software Development Services</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Software Development Solutions</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Dedicated Software Development Teams</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Staff Augmentation</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Software Development Outsourcing</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Diversity</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Social Responsibility</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Senior Advisor Program</a></li>
+                            <li><a href="#" class="hover:underline text-sm">About Us</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Methodologies</a></li>
+                            <li><a href="#" class="hover:underline text-sm"> Technologies</a></li>
+                            <li><a href="#" class="hover:underline text-sm"> Certifications</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Software Development Services</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Software Development Solutions</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Dedicated Software Development Teams</a>
+                            </li>
+                            <li><a href="#" class="hover:underline text-sm">Staff Augmentation</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Software Development Outsourcing</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Diversity</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Social Responsibility</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Senior Advisor Program</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h6 class="text-base font-semibold mb-2 flex items-baseline gap-1">Resources<div class="w-[6px] h-[6px] rounded-full bg-[#f6bf22]"></div> </h6>
+                        <h6 class="text-base font-semibold mb-2 flex items-baseline gap-1">Resources<div
+                                class="w-[6px] h-[6px] rounded-full bg-[#f6bf22]"></div>
+                        </h6>
                         <ul class="space-y-1 text-sm">
-                        <li><a href="#" class="hover:underline text-sm">Case Studies</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Blog</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Press</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Industries Insights</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Technology Resource Center</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Client Referral Program</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Case Studies</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Blog</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Press</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Industries Insights</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Technology Resource Center</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Client Referral Program</a></li>
                         </ul>
                     </div>
                     <div>
-                         <h6 class="text-base font-semibold mb-2 flex items-baseline gap-1">Careers<div class="w-[6px] h-[6px] rounded-full bg-[#f6bf22]"></div> </h6>
+                        <h6 class="text-base font-semibold mb-2 flex items-baseline gap-1">Careers<div
+                                class="w-[6px] h-[6px] rounded-full bg-[#f6bf22]"></div>
+                        </h6>
                         <ul class="space-y-1 text-sm">
-                        <li><a href="#" class="hover:underline text-sm">Job Opportunities</a></li>
-                        <li><a href="#" class="hover:underline text-sm">Talent Referrals</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Job Opportunities</a></li>
+                            <li><a href="#" class="hover:underline text-sm">Talent Referrals</a></li>
                         </ul>
                     </div>
                     <div class="md:col-span-3 mt-5">
                         <div>
                             <div class="flex space-x-4 mb-5">
-                                <a href="#" class="hover:underline text-xs border-r border-black pr-4">Privacy Policy</a>
-                                <a href="#" class="hover:underline text-xs border-r border-black pr-4">Terms of Service</a>
+                                <a href="#" class="hover:underline text-xs border-r border-black pr-4">Privacy
+                                    Policy</a>
+                                <a href="#" class="hover:underline text-xs border-r border-black pr-4">Terms of
+                                    Service</a>
                                 <a href="#" class="hover:underline text-xs">Do Not Sell My Personal Information</a>
-                               
+
                             </div>
-                             <p class="text-xs">BairesDev 2009 - 2025. All rights reserved.</p>
+                            <p class="text-xs">BairesDev 2009 - 2025. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="lg:w-3/7 w-full py-8 pr-20 pl-10 bg-[#d9dcdf]">
-               <div>
-                 <h6 class="text-base font-semibold mb-2 flex items-baseline gap-1">Get in touch<div class="w-[6px] h-[6px] rounded-full bg-[#f6bf22]"></div> </h6>
-                 <div>
-                    <div class="flex flex-wrap gap-4 items-center">
-                        <div>
-                            <button class="border-[2px] border-black bg-transparent px-4 py-2 rounded-lg font-medium text-lg hover:bg-black hover:text-white transition-all duration-300 text-nowrap">Contact Us</button>
-                        </div>
-                         <div>
-                            <button class="bg-[#f6bf22] hover:bg-[#ab851b] border-[2px] border-[#f6bf22] hover:border-[#ab851b] px-4 py-2 rounded-lg font-medium text-lg text-black transition-all duration-300 flex items-center gap-2 text-nowrap">Schedule a Call <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg> </button>
-                        </div>
-                    </div>
+                <div>
+                    <h6 class="text-base font-semibold mb-2 flex items-baseline gap-1">Get in touch<div
+                            class="w-[6px] h-[6px] rounded-full bg-[#f6bf22]"></div>
+                    </h6>
                     <div>
-                        <div class="flex gap-4 items-center mt-5">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57a.84.84 0 0 0-.31-.05c-.26 0-.51.1-.71.29l-2.2 2.2a15.149 15.149 0 0 1-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1z"></path></svg>
-                            <a href="" class="hover:text-blue-600">+91-8892755762</a>
-                        </div>
-                    </div>
-                    <div class="mt-20">
-                        <h6 class="font-bold">Get insights from the experts on building and scaling technology teams.</h6>
-                        <div class="mt-5 space-y-3">
-                            <p class="text-[#3d4751] font-normal ">Your e-mail address</p>
-                            <div class="flex flex-wrap items-center gap-2">
-                                <input type="text" class="bg-white focus:outline-0 focus:ring-0 py-2 px-4 " placeholder="Your e-mail address">
-                                <button class="border-[2px] border-black bg-transparent px-4 py-[6px] rounded-lg font-medium text-lg hover:bg-black hover:text-white transition-all duration-300 flex items-center gap-2">Subscribe <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg> </button>
+                        <div class="flex flex-wrap gap-4 items-center">
+                            <div>
+                                <button
+                                    class="border-[2px] border-black bg-transparent px-4 py-2 rounded-lg font-medium text-lg hover:bg-black hover:text-white transition-all duration-300 text-nowrap">Contact
+                                    Us</button>
                             </div>
-                        </div>
-                       <div class="flex  items-center mt-2">
-                            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-black rounded-sm focus:ring-blue-500 ">
-                            <label for="default-checkbox" class="ms-2 text-sm font-medium text-black">By subscribing I accept the <a href="#" class="underline"> Privacy Policy.</a>.</label>
-                        </div>
-                        <div class="mt-14">
-                            <h6 class="text-base font-semibold mb-2 flex items-baseline gap-1">Follow us<div class="w-[6px] h-[6px] rounded-full bg-[#f6bf22]"></div> </h6>
+                            <div>
+                                <button
+                                    class="bg-[#f6bf22] hover:bg-[#ab851b] border-[2px] border-[#f6bf22] hover:border-[#ab851b] px-4 py-2 rounded-lg font-medium text-lg text-black transition-all duration-300 flex items-center gap-2 text-nowrap">Schedule
+                                    a Call <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 24 24" height="20px" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                        </path>
+                                    </svg> </button>
+                            </div>
                         </div>
                         <div>
-                            <div class="flex gap-4 items-center mt-4">
-                                <div class="text-black hover:text-[#137ec2]">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M20.45175,20.45025 L16.89225,20.45025 L16.89225,14.88075 C16.89225,13.5525 16.86975,11.844 15.04275,11.844 C13.191,11.844 12.90825,13.2915 12.90825,14.7855 L12.90825,20.45025 L9.3525,20.45025 L9.3525,8.997 L12.765,8.997 L12.765,10.563 L12.81375,10.563 C13.2885,9.66225 14.4495,8.71275 16.18125,8.71275 C19.78575,8.71275 20.45175,11.08425 20.45175,14.169 L20.45175,20.45025 Z M5.33925,7.4325 C4.1955,7.4325 3.27375,6.50775 3.27375,5.36775 C3.27375,4.2285 4.1955,3.30375 5.33925,3.30375 C6.47775,3.30375 7.4025,4.2285 7.4025,5.36775 C7.4025,6.50775 6.47775,7.4325 5.33925,7.4325 L5.33925,7.4325 Z M7.11975,20.45025 L3.5565,20.45025 L3.5565,8.997 L7.11975,8.997 L7.11975,20.45025 Z M23.00025,0 L1.0005,0 C0.44775,0 0,0.44775 0,0.99975 L0,22.9995 C0,23.55225 0.44775,24 1.0005,24 L23.00025,24 C23.55225,24 24,23.55225 24,22.9995 L24,0.99975 C24,0.44775 23.55225,0 23.00025,0 L23.00025,0 Z"></path></svg>
+                            <div class="flex gap-4 items-center mt-5">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                    height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                    <path
+                                        d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57a.84.84 0 0 0-.31-.05c-.26 0-.51.1-.71.29l-2.2 2.2a15.149 15.149 0 0 1-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1z">
+                                    </path>
+                                </svg>
+                                <a href="" class="hover:text-blue-600">+91-8892755762</a>
+                            </div>
+                        </div>
+                        <div class="mt-20">
+                            <h6 class="font-bold">Get insights from the experts on building and scaling technology
+                                teams.</h6>
+                            <div class="mt-5 space-y-3">
+                                <p class="text-[#3d4751] font-normal ">Your e-mail address</p>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <input type="text" class="bg-white focus:outline-0 focus:ring-0 py-2 px-4 "
+                                        placeholder="Your e-mail address">
+                                    <button
+                                        class="border-[2px] border-black bg-transparent px-4 py-[6px] rounded-lg font-medium text-lg hover:bg-black hover:text-white transition-all duration-300 flex items-center gap-2">Subscribe
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 24 24" height="20px" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path
+                                                d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z">
+                                            </path>
+                                        </svg> </button>
                                 </div>
-                                <div class="text-black hover:text-[#137ec2]">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
-                                </div>
-                                <div class="text-black hover:text-[#137ec2]">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"></path></svg>
-                                </div>
-                                <div class="text-black hover:text-[#137ec2]">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"></path></svg>
-                                </div>
-                                <div class="text-black hover:text-[#137ec2]">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M508.6 148.8c0-45-33.1-81.2-74-81.2C379.2 65 322.7 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.6-.1 220.2 0 255.8c-.1 35.6 1 71.2 3.4 106.9 0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8 60.8.2 120.3-1 178.6-3.8 40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107 .2-35.6-.9-71.2-3.3-106.9zM207 353.9V157.4l145 98.2-145 98.3z"></path></svg>
+                            </div>
+                            <div class="flex  items-center mt-2">
+                                <input id="default-checkbox" type="checkbox" value=""
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-black rounded-sm focus:ring-blue-500 ">
+                                <label for="default-checkbox" class="ms-2 text-sm font-medium text-black">By subscribing
+                                    I accept the <a href="#" class="underline"> Privacy Policy.</a>.</label>
+                            </div>
+                            <div class="mt-14">
+                                <h6 class="text-base font-semibold mb-2 flex items-baseline gap-1">Follow us<div
+                                        class="w-[6px] h-[6px] rounded-full bg-[#f6bf22]"></div>
+                                </h6>
+                            </div>
+                            <div>
+                                <div class="flex gap-4 items-center mt-4">
+                                    <div class="text-black hover:text-[#137ec2]">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 24 24" height="20px" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M20.45175,20.45025 L16.89225,20.45025 L16.89225,14.88075 C16.89225,13.5525 16.86975,11.844 15.04275,11.844 C13.191,11.844 12.90825,13.2915 12.90825,14.7855 L12.90825,20.45025 L9.3525,20.45025 L9.3525,8.997 L12.765,8.997 L12.765,10.563 L12.81375,10.563 C13.2885,9.66225 14.4495,8.71275 16.18125,8.71275 C19.78575,8.71275 20.45175,11.08425 20.45175,14.169 L20.45175,20.45025 Z M5.33925,7.4325 C4.1955,7.4325 3.27375,6.50775 3.27375,5.36775 C3.27375,4.2285 4.1955,3.30375 5.33925,3.30375 C6.47775,3.30375 7.4025,4.2285 7.4025,5.36775 C7.4025,6.50775 6.47775,7.4325 5.33925,7.4325 L5.33925,7.4325 Z M7.11975,20.45025 L3.5565,20.45025 L3.5565,8.997 L7.11975,8.997 L7.11975,20.45025 Z M23.00025,0 L1.0005,0 C0.44775,0 0,0.44775 0,0.99975 L0,22.9995 C0,23.55225 0.44775,24 1.0005,24 L23.00025,24 C23.55225,24 24,23.55225 24,22.9995 L24,0.99975 C24,0.44775 23.55225,0 23.00025,0 L23.00025,0 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="text-black hover:text-[#137ec2]">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 448 512" height="20px" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="text-black hover:text-[#137ec2]">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 448 512" height="20px" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="text-black hover:text-[#137ec2]">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 448 512" height="20px" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="text-black hover:text-[#137ec2]">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 512 512" height="20px" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M508.6 148.8c0-45-33.1-81.2-74-81.2C379.2 65 322.7 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.6-.1 220.2 0 255.8c-.1 35.6 1 71.2 3.4 106.9 0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8 60.8.2 120.3-1 178.6-3.8 40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107 .2-35.6-.9-71.2-3.3-106.9zM207 353.9V157.4l145 98.2-145 98.3z">
+                                            </path>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                 </div>
-               </div>
+                </div>
             </div>
         </div>
     </footer>
 
-     
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -1514,66 +1695,66 @@
         });
         document.addEventListener('DOMContentLoaded', function () {
             var swiper = new Swiper('.solutionSwiper', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination-solution',
-                clickable: true,
-            },
-            // Add responsive breakpoints
-            breakpoints: {
-                320: {
-                slidesPerView: 1,
-                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination-solution',
+                    clickable: true,
                 },
-                640: {
-                slidesPerView: 1.4,
-                spaceBetween: 30,
+                // Add responsive breakpoints
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    640: {
+                        slidesPerView: 1.4,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
                 },
-                1024: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-                },
-            },
             });
         });
         const swiperLogo = new Swiper(".mySwiperLogo", {
-        loop: true,
-        speed: 10000,
-        slidesPerView: "auto",
-        spaceBetween: 30,
-        pagination:false,
-        autoplay: {
-            delay: 0,
-            enabled: true
-        },
-        allowTouchMove: false,
-        loopedSlides: 50,
-        grabCursor: false,
-        centeredSlides: false,
-        breakpoints: {
-            0: {
-                slidesPerView: 2,
-                // spaceBetween: 20,
+            loop: true,
+            speed: 10000,
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            pagination: false,
+            autoplay: {
+                delay: 0,
+                enabled: true
             },
-            576: {
-                slidesPerView: 3,
-                // spaceBetween: 25,
+            allowTouchMove: false,
+            loopedSlides: 50,
+            grabCursor: false,
+            centeredSlides: false,
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    // spaceBetween: 20,
+                },
+                576: {
+                    slidesPerView: 3,
+                    // spaceBetween: 25,
+                },
+                768: {
+                    slidesPerView: 4,
+                    // spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 6,
+                    // spaceBetween: 35,
+                },
+                1400: {
+                    slidesPerView: 6,
+                    // spaceBetween: 20,
+                },
             },
-            768: {
-                slidesPerView: 4,
-                // spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 6,
-                // spaceBetween: 35,
-            },
-            1400: {
-                slidesPerView: 6,
-                // spaceBetween: 20,
-            },
-        },
-    });
-      document.addEventListener('DOMContentLoaded', function () {
+        });
+        document.addEventListener('DOMContentLoaded', function () {
             var swiper = new Swiper('.solutionSwiper2', {
                 loop: true,
                 pagination: {
