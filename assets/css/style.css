@@ -1297,6 +1297,9 @@
   .bg-\[\#2b329a\] {
     background-color: #2b329a;
   }
+  .bg-\[\#2b969a\] {
+    background-color: #2b969a;
+  }
   .bg-\[\#0000006e\] {
     background-color: #0000006e;
   }
@@ -1604,8 +1607,17 @@
   .p-\[2px\] {
     padding: 2px;
   }
+  .\!px-2 {
+    padding-inline: calc(var(--spacing) * 2) !important;
+  }
+  .\!px-4 {
+    padding-inline: calc(var(--spacing) * 4) !important;
+  }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
+  }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -1630,6 +1642,9 @@
   }
   .px-18 {
     padding-inline: calc(var(--spacing) * 18);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
   }
   .px-\[18px\] {
     padding-inline: 18px;
